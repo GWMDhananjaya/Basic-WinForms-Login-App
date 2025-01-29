@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7B4D440-5DFD-4292-9714-0D2B5F20E0D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>App2</RootNamespace>
+    <AssemblyName>App2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="subForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm3.Designer.cs">
+      <DependentUpon>subForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm5.Designer.cs">
+      <DependentUpon>subForm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subForm8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm8.Designer.cs">
+      <DependentUpon>subForm8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subForm9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm9.Designer.cs">
+      <DependentUpon>subForm9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subForm7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm7.Designer.cs">
+      <DependentUpon>subForm7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subForm6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm6.Designer.cs">
+      <DependentUpon>subForm6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm4.Designer.cs">
+      <DependentUpon>subForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm2.Designer.cs">
+      <DependentUpon>subForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subForm1.Designer.cs">
+      <DependentUpon>subForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="subForm3.resx">
+      <DependentUpon>subForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm5.resx">
+      <DependentUpon>subForm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm8.resx">
+      <DependentUpon>subForm8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm9.resx">
+      <DependentUpon>subForm9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm7.resx">
+      <DependentUpon>subForm7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm6.resx">
+      <DependentUpon>subForm6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm4.resx">
+      <DependentUpon>subForm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm2.resx">
+      <DependentUpon>subForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subForm1.resx">
+      <DependentUpon>subForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="file\Fwd_ HGS1210.pdf" />
+    <None Include="file\LECTURE 1.pptx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20241002_234045_116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20241002_234052_535.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
